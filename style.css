@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,800;0,900;1,400;1,500;1,600;1,700&display=swap');
+/********* GENERAL CSS*******/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/****** HEADER START ****/
+#header{
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 677px;
+    padding-right: 140px;
+    padding-left: 156px;
+    padding-top: 153px;
+    padding-bottom: 86px;
+}
+.header-right{
+    flex-basis: 45%;
+}
+.header-left{
+    flex-basis: 45%;
+}
+.header-left h1 {
+    font-size: 64px;
+    line-height: 80px;
+    color: #ffffff;
+    margin-bottom: 27px;
+}
+.header-left button {
+    padding: 10px 24px;
+    background:  #E02C6D;
+    border: none;
+    color: #ffffff;
+}
+.header-left button i {
+    margin-left: 5px;
+    font-size: 13px;
+}
+.header-right img{
+    width: 100%;
+    height: auto;
+}
+/******* FEATURES START *******/
+section.container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(248, 249, 250);
+}
+#features{
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 31px;
+    grid-row-gap: 31px;
+    margin-top: 70px;
+    margin-bottom: 165px;
+}
+.feature {
+    padding: 15px;
+    background: #ffffff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.feature img {
+    width: 300px;
+    height: 256px;
+}
+.feature h3 {
+    font-size: 28px;
+    margin: 11px 0px;
+    color: #18191F;
+}
+
+.feature p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+/******* highlights section start *******/
+section#highlights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(248, 249, 250);
+    padding-bottom: 158px;
+    padding-right: 156px;
+    padding-left: 182px;
+}
+.highlight-right img {
+    width: 567px;
+    height: 427px;
+}
+.highlight-left h1 {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 10px;
+    color:  #0A0826;
+}
+
+.highlight-left p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 24px;
+}
+.highlight-left button {
+    padding: 10px 24px;
+    background:  #E02C6D;
+    border: none;
+    color: #ffffff;
+}
+/**** footer section start *****/
+footer#footer {
+    text-align: center;
+    background: rgb(248, 249, 250);
+    padding-bottom: 63px;
+}
+
+.footer-logo img {
+    width: 483.87px;
+    height: 110px;
+}
+
+.social-media img {
+    padding: 20px 0px;
+    width: 32px;
+    height: 32px;
+    margin: 14px;
+}
+
+.copyright-text p {
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 0.8px;
+}
+
+/***** media query *****/
+
+/* mobile version */
+@media only screen and (max-width: 688px) {
+    #header{
+        height: 695px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 60px 16px;
+    }
+    
+    .header-left h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .container{
+        overflow: hidden;
+    }
+    #features{
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        
+    }
+    .feature{
+        margin: 0px 40px;
+    }
+    section#highlights {
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 68px;
+        padding-right: 30px;
+        padding-left: 30px;
+        background-color: #ffffff;
+    }
+    .highlight-right img {
+        width: 100%;
+        height: auto;
+    }
+    .highlight-left{
+        margin-bottom: 40px;
+    }
+    .highlight-left h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .highlight-left p {
+        font-size: 22px;
+        line-height: 50px;
+    }
+    footer#footer {
+        padding: 0px 40px;
+        background: #ffffff;
+        padding-bottom: 150px;
+    }
+    
+    .footer-logo img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .social-media img {
+        padding: 15px 0px;
+        margin: 10px;
+    }
+    
+    
+    
+}
