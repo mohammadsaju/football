@@ -115,7 +115,7 @@ section#highlights {
     color: #ffffff;
 }
 /**** club join start ****/
-section#club-join {
+#club-join {
     display: flex;
     flex-direction: column;
     justify-content: center;
