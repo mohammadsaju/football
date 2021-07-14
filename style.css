@@ -275,6 +275,7 @@ footer#footer {
     }
     #features{
         grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0px;
         padding-top: 50px;
         margin-top: 0px;
         margin-bottom: 0px;
