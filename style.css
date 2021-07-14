@@ -30,10 +30,10 @@ body{
     font-size: 64px;
     line-height: 80px;
     color: #ffffff;
-    margin-bottom: 27px;
+    margin-bottom: 43px;
 }
 .header-left button {
-    padding: 10px 24px;
+    padding: 20px 36px;
     background:  #E02C6D;
     border: none;
     color: #ffffff;
@@ -87,7 +87,7 @@ section#highlights {
     justify-content: space-between;
     align-items: center;
     background: rgb(248, 249, 250);
-    padding-bottom: 158px;
+    padding-bottom: 82px;
     padding-right: 156px;
     padding-left: 182px;
 }
@@ -109,16 +109,60 @@ section#highlights {
     margin-bottom: 24px;
 }
 .highlight-left button {
-    padding: 10px 24px;
+    padding: 20px 37px;
     background:  #E02C6D;
     border: none;
     color: #ffffff;
+}
+/**** club join start ****/
+section#club-join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0px;
+}
+.club-join-title {
+    margin-bottom: 30px;
+}
+
+.club-join-title h1 {
+    font-size: 44px;
+    font-weight: 600;
+    font-family: serif;
+}
+
+.club-join-title p {
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.club-join-input-field {
+    display: flex;
+}
+.club-join-input-field input:first-child{
+    border: none;
+    outline: none;
+    padding: 20px 75px;
+    background: #f6f6f6;
+}
+.club-join-input-field input:last-child{
+    border: none;
+    outline: none;
+    padding: 20px 35px;
+    background: teal;
+    color: #ffffff;
+    cursor: pointer;
+}
+.club-join-input-field input:last-child:hover{
+    background-color: rgb(6, 94, 94);
 }
 /**** footer section start *****/
 footer#footer {
     text-align: center;
     background: rgb(248, 249, 250);
-    padding-bottom: 63px;
+    padding: 63px 0px;
 }
 
 .footer-logo img {
@@ -163,8 +207,6 @@ footer#footer {
         margin-top: 0px;
         margin-bottom: 0px;
         padding-bottom: 30px;
-        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-        
     }
     .feature{
         margin: 0px 40px;
@@ -173,9 +215,9 @@ footer#footer {
         justify-content: center;
         flex-direction: column;
         padding-top: 60px;
-        padding-bottom: 68px;
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-bottom: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
         background-color: #ffffff;
     }
     .highlight-right img {
@@ -191,7 +233,13 @@ footer#footer {
     }
     .highlight-left p {
         font-size: 22px;
-        line-height: 50px;
+        line-height: 37px;
+    }
+    section#club-join {
+        padding: 50px 30px;
+    }
+    .club-join-input-field input{
+        width: 100%;
     }
     footer#footer {
         padding: 0px 40px;
@@ -211,4 +259,80 @@ footer#footer {
     
     
     
+}
+/**** for medium screen size ******/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    #header{
+        padding: 0px 25px;
+    }
+    
+    .header-left h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .container{
+        overflow: hidden;
+    }
+    #features{
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        
+    }
+    .feature{
+        margin: 0px 40px;
+    }
+    section#highlights {
+        justify-content: space-evenly;
+        padding-top: 60px;
+        padding-bottom: 68px;
+        padding-right: 30px;
+        padding-left: 30px;
+        background-color: #ffffff;
+    }
+    .highlight-left{
+        flex-basis: 46%;
+    }
+    .highlight-right{
+        flex-basis: 46%;
+    }
+    .highlight-right img {
+        width: 100%;
+        height: auto;
+    }
+    .highlight-left{
+        margin-bottom: 40px;
+    }
+    .highlight-left h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .highlight-left p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    footer#footer {
+        padding: 0px 60px;
+        background: #ffffff;
+        padding-bottom: 150px;
+    }
+    
+    .footer-logo img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .social-media img {
+        padding: 15px 0px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    .copyright-text p{
+        font-family: sans-serif;
+        font-size: 25px;
+    }
 }
